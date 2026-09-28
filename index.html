@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard de Aforadores - San Ramón / Las Pircas</title>
+
+  <!-- Leaflet CSS para el Mapa -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1>Dashboard de Aforadores</h1>
+    <p>Inspección de Riego El Carril - San Ramón / Las Pircas</p>
+    <div class="last-update" id="ultima-actualizacion">Cargando datos...</div>
+  </header>
+
+  <main class="container">
+    <!-- Sección de Cajitas / KPI Dashboard -->
+    <section class="kpi-grid" id="kpi-container">
+      <div class="kpi-card loading">Cargando aforadores...</div>
+    </section>
+
+    <!-- Mapa de Ubicaciones -->
+    <section class="map-section">
+      <h2>Ubicación de Aforadores</h2>
+      <div id="map"></div>
+    </section>
+
+    <!-- Historial -->
+    <section class="history-section">
+      <div class="history-header">
+        <h2>Últimas Mediciones</h2>
+        <button id="btn-historial" onclick="cargarHistorialCompleto()">Cargar Historial Completo</button>
+      </div>
+      <div class="table-container">
+        <table id="tabla-mediciones">
+          <thead>
+            <tr>
+              <th>Fecha / Hora</th>
+              <th>Aforador</th>
+              <th>Caudal / Nivel</th>
+              <th>Observaciones</th>
+            </tr>
+          </thead>
+          <tbody id="tabla-body">
+            <tr><td colspan="4" style="text-align:center;">Cargando mediciones...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <!-- Lógica JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
