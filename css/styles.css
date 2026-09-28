@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f6f9;
+  color: #333;
+}
+
+.header {
+  background-color: #1b4332;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 1.8rem;
+}
+
+.header p {
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+.last-update {
+  margin-top: 8px;
+  font-size: 0.8rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+/* Grilla de Tarjetas / Cajitas Dashboard */
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.kpi-card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 18px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  border-left: 5px solid #2d6a4f;
+}
+
+.kpi-title {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: #666;
+  font-weight: 600;
+}
+
+.kpi-value {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1b4332;
+  margin: 8px 0;
+}
+
+.kpi-date {
+  font-size: 0.75rem;
+  color: #888;
+}
+
+/* Mapa */
+.map-section {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  margin-bottom: 25px;
+}
+
+.map-section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  color: #1b4332;
+}
+
+#map {
+  height: 380px;
+  width: 100%;
+  border-radius: 6px;
+}
+
+/* Tabla e Historial */
+.history-section {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.history-header h2 {
+  font-size: 1.2rem;
+  color: #1b4332;
+}
+
+#btn-historial {
+  background-color: #2d6a4f;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+#btn-historial:hover {
+  background-color: #1b4332;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+th, td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background-color: #f8f9fa;
+  color: #555;
+}
